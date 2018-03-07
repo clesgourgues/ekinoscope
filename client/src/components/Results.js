@@ -19,10 +19,8 @@ class Results extends Component {
 
   componentWillReceiveProps(nextProps) {
     if (nextProps !== this.props){
-      let searchTerm = nextProps.searchTerm
-      let searchOption = nextProps.searchOption
-      console.log(searchOption)
-      console.log(searchTerm)
+      const searchTerm = nextProps.searchTerm
+      const searchOption = nextProps.searchOption
       if(searchOption === "user") {
         let filteredUsers = this.totalUsers.filter(user => user["lastName"].toLowerCase()
         .indexOf(searchTerm) > -1)

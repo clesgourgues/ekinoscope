@@ -1,21 +1,28 @@
 import React, { Component } from 'react';
-import UserItem from './userItem';
-import { Link } from "react-router-dom";
+import GoogleMapReact from 'google-map-react';
+import Great from './Great'
 
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
-class Map extends Component {
-  state = { users: [] }
-
-  componentDidMount() {
-    fetch('/users')
-      .then(res => res.json())
-      .then(users => this.setState({ users }));
-  }
+export default class Map extends React.Component {
+  static defaultProps = {
+    center: {lat: 48.89085370000001, lng: 2.285860800000023},
+    zoom: 4
+  };
 
   render() {
-        const userNode = this.state.users.map( user=> <UserItem user={user} key={user.id} />)
-        return (<div className="App"><h1>Map</h1><ul className="card-container">{userNode}</ul></div>);
-      }
-    }
-    
-    export default Map;
+    return (
+      <div className="map">
+      <GoogleMapReact
+        bootstrapURLKeys={{ key: ['AIzaSyDnSUhsWj9LtQrB6PxayiyrLfUJmTx1ZW0'] }}
+        defaultCenter={this.props.center}
+        defaultZoom={this.props.zoom}
+      >
+        <Great lat={48.89085370000001} lng={2.285860800000023} text={'Ekino Paris'}/>
+        <Great lat={44.8487552 } lng={-0.5717032000000017} text={'Ekino Bordeaux'} />
+        <Great lat={51.5340757} lng={-0.12493050000000494} text={'Ekino London'} />
+      </GoogleMapReact>
+      </div>
+    );
+  }
+}

@@ -1,14 +1,15 @@
 import React from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
-import Header from "./components/Header";
-import SearchForm from "./components/searchForm";
-import Results from "./components/Results";
-import Map from "./components/Map";
-import Organigram from "./components/Organigram";
+import {withRouter} from 'react-router-dom';
+import Header from './components/Header';
+import SearchForm from './components/searchForm';
+import Results from './components/Results';
+import Map from './components/Map';
+import Organigram from './components/Organigram';
 import Profile from "./components/Profile";
-import "./App.css";
+import './App.css';
 
-export default class App extends React.Component {
+class App extends React.Component {
   state = {
     formValues: {
       searchTerm: "",
@@ -16,6 +17,10 @@ export default class App extends React.Component {
     },
     user: []
   };
+
+  componentDidMount () {
+    console.log(this.props.location.pathname);
+}
 
   reset = () => {
     this.setState({
@@ -118,3 +123,8 @@ export default class App extends React.Component {
     );
   }
 }
+
+const EkiApp = withRouter(props => <App {...props}/>);
+
+export default EkiApp
+

@@ -55,9 +55,9 @@
   },
   {
     "id": "002",
-    "firstName": "Cécile",
+    "firstName": "Cecile",
     "lastName": "Lesgourgues",
-    "title": "Ingénieur Front Junior",
+    "title": "Ingenieur Front Junior",
     "hiredAt": "12/02/2018",
     "location": "Bordeaux",
     "project": "Arval",
@@ -66,20 +66,10 @@
     "email": "cecile.lesgourgues@ekino.com",
     "phoneNumber": "0686061616",
     "school": "Wild Code School",
-    "pic":
-      "https://image.noelshack.com/fichiers/2018/10/2/1520328766-familyguy-4.png",
+    "pic": "https://pbs.twimg.com/profile_images/841042000463970311/Qq2an4Q1_400x400.jpg",
     "experience": "",
-    "technos": [
-      "HTML",
-      "CSS",
-      "SASS",
-      "AngularJS",
-      "React",
-      "NodeJS",
-      "Express",
-      "MongoDB"
-    ],
-    "quote": "string",
+    "technos": ["HTML", "CSS", "SASS", "AngularJS", "React", "NodeJS", "Express", "MongoDB"],
+    "quote": "Some days are just bad days, that's all. You have to experience sadness to know happiness, and I remind myself that not every day is going to be a good day, that's just the way it is!",
     "hobbies": [
       {
         "hobbyName": "yoga",
@@ -99,18 +89,28 @@
     "id": "003",
     "firstName": "Ruben",
     "lastName": "Desert",
-    "title": "Ingénieur NodeJS",
+    "title": "Ingenieur NodeJS",
     "hiredAt": "05/03/2018",
     "location": "Paris",
+<<<<<<< HEAD
     "project": "Hackathon",
     "pastProjects": [],
+=======
+    "project": "Hackaton",
+    "pastProjects": ["Ponticelli"],
+>>>>>>> orga-feature
     "slack": "ruben.desert",
     "email": "ruben.desert@ekino.com",
     "phoneNumber": "0630313612",
     "school": "EEMI",
+<<<<<<< HEAD
     "pic":
       "https://image.noelshack.com/fichiers/2018/10/2/1520328766-familyguy-4.png",
     "experience": "coucou",
+=======
+    "pic": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAMAAgDGAAwAAQAAAAAAAA4mAAAAJGE1OTBhMGRkLWRhNWMtNDZmMi1hMDEzLTE1YzBjNDEzMmNlYQ.jpg",
+    "experience": "Anciennement technicien informatique durant quatre annees, dont deux en alternance, j'ai repris une formation de developpeur web avec l'EEMI sur trois ans que je conclus actuellement avec un stage de fin d'etude pour 6 mois chez Ekino.",
+>>>>>>> orga-feature
     "technos": ["NodeJS", "Angular", "PHP", "Go"],
     "quote": "Done is better than nothing",
     "hobbies": [
@@ -418,5 +418,281 @@
         "languageLevel": "beginner"
       }
     ]
+<<<<<<< HEAD
   }
 ]
+=======
+    },
+    {
+      "id": "004",
+      "firstName": "Loic",
+      "lastName": "LHoste",
+      "title": "Consultant Technique Senior",
+      "hiredAt": "05/03/2018",
+      "location": "Levallois",
+      "project": "Hackathon",
+      "pastProjects": ["EDF", "AXA", "ELF"],
+      "slack": "loic.lhoste",
+      "email": "loic.lhoste@ekino.com",
+      "phoneNumber": "0675567945",
+      "school": "CNAM ESCPI",
+      "pic": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAArkAAAAJDlkZDM1ZWU3LTM3MTEtNDNmOC04ZDkzLWEwZjM0NWZkMWNjOA.jpg",
+      "experience": "I started as a J2EE developer and after I became a project manager. I worked for several IT companies on different project such as customer care and on line reservation.",
+      "technos": ["JAVA", "J2EE", "REST", "ORACLE"],
+      "quote": "Il n&#39;y a que les gens qui aiment rire qui sont serieux. Les autres se prennent au serieux.",
+      "hobbies": [
+        {
+          "hobbyName": "Natation",
+          "hobbyUrl": "",
+          "hobbyPic": ""
+        },
+        {
+          "hobbyName": "Music",
+          "hobbyUrl": "",
+          "hobbyPic": ""
+        }
+      ],
+      "languages": [
+        {
+          "languageName": "english",
+          "languageLevel": "professionnal"
+        },
+          {
+            "languageName": "italian",
+            "languageLevel": "beginner"
+          }
+      ]
+    },
+    {
+      "id": "005",
+      "firstName": "Nicolas",
+      "lastName": "Gunther",
+      "title": "Ingenieur Java junior",
+      "hiredAt": "05/03/2018",
+      "location": "Levallois",
+      "project": "Hackathon",
+      "pastProjects": [],
+      "slack": "nicolas.gunther",
+      "email": "nicolas.gunther@ekino.com",
+      "phoneNumber": "0675567945",
+      "school": "CNAM ESCPI",
+      "pic": "https://media-exp2.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAeHAAAAJGZlYmE3MmRlLTNkYWYtNDIzOC1iNjkyLTU1NzU0NDhjNjM2MA.jpg",
+      "experience": "I started as a J2EE developer and after I became a project manager. I worked for several IT companies on different project such as customer care and on line reservation.",
+      "technos": ["JAVA", "J2EE", "REST", "ORACLE"],
+      "quote": "Il n&#39;y a que les gens qui aiment rire qui sont serieux. Les autres se prennent au serieux.",
+      "hobbies": [
+        {
+          "hobbyName": "Natation",
+          "hobbyUrl": "",
+          "hobbyPic": ""
+        },
+        {
+          "hobbyName": "Music",
+          "hobbyUrl": "",
+          "hobbyPic": ""
+        }
+      ],
+      "languages": [
+        {
+          "languageName": "english",
+          "languageLevel": "professionnal"
+        },
+        {
+          "languageName": "italian",
+          "languageLevel": "beginner"
+        }
+      ]
+    },
+    {
+      "id": "006",
+      "firstName": "YAHYA",
+      "lastName": "BAASSOU",
+      "title": "Ingenieur NodeJS junior",
+      "hiredAt": "05/03/2018",
+      "location": "Levallois",
+      "project": "Hackathon",
+      "pastProjects": [],
+      "slack": "yahya.baassou",
+      "email": "yahya.baassou@ekino.com",
+      "phoneNumber": "0675567945",
+      "school": "EEMI",
+      "pic": "http://www.yahya.baassou.com/assets/img/id.jpg",
+      "experience": "I started as a J2EE developer and after I became a project manager. I worked for several IT companies on different project such as customer care and on line reservation.",
+      "technos": ["Javascript", "NodeJS", "REST", "Sequelize"],
+      "quote": "Il n&#39;y a que les gens qui aiment rire qui sont serieux. Les autres se prennent au serieux.",
+      "hobbies": [
+        {
+          "hobbyName": "Natation",
+          "hobbyUrl": "",
+          "hobbyPic": ""
+        },
+        {
+          "hobbyName": "Music",
+          "hobbyUrl": "",
+          "hobbyPic": ""
+        }
+      ],
+      "languages": [
+        {
+          "languageName": "english",
+          "languageLevel": "professionnal"
+        },
+        {
+          "languageName": "italian",
+          "languageLevel": "beginner"
+        }
+      ]
+    },
+    {
+      "id": "007",
+      "firstName": "FRANCOIS",
+      "lastName": "BARRAILLA",
+      "title": "Ingenieur Front confirmé",
+      "hiredAt": "05/03/2018",
+      "location": "Levallois",
+      "project": "Samsung",
+      "pastProjects": [],
+      "slack": "francois.barrailla",
+      "email": "francois.barrailla@ekino.com",
+      "phoneNumber": "0675567945",
+      "school": "CNAM ESCPI",
+      "pic": "https://pbs.twimg.com/profile_images/805522803525058561/BJ5UuQ1E_400x400.jpg",
+      "experience": "I started as a J2EE developer and after I became a project manager. I worked for several IT companies on different project such as customer care and on line reservation.",
+      "technos": ["Javascript", "NodeJS", "Angular"],
+      "quote": "Happiness cannot be traveled to, owned, earned, worn or consumed. Happiness is the spiritual experience of living every minute with love, grace, and gratitude.",
+      "hobbies": [
+        {
+          "hobbyName": "Natation",
+          "hobbyUrl": "",
+          "hobbyPic": ""
+        },
+        {
+          "hobbyName": "Music",
+          "hobbyUrl": "",
+          "hobbyPic": ""
+        }
+      ],
+      "languages": [
+        {
+          "languageName": "english",
+          "languageLevel": "professionnal"
+        },
+        {
+          "languageName": "italian",
+          "languageLevel": "beginner"
+        }
+      ]
+    },
+    {
+      "id": "008",
+      "firstName": "MARIE-SAINTE",
+      "lastName": "Ludovic",
+      "title": "Consultant technique confirme",
+      "hiredAt": "05/03/2018",
+      "location": "Levallois",
+      "project": "Hackathon",
+      "pastProjects": ["SFR"],
+      "slack": "ludovic.marie-sainte",
+      "email": "ludovic.marie-sainte@ekino.com",
+      "phoneNumber": "0675567945",
+      "school": "CNAM ESCPI",
+      "pic": "https://media-exp2.licdn.com/mpr/mpr/shrinknp_200_200/p/2/005/015/305/12fdb2b.jpg",
+      "experience": "Be happy for this moment. This moment is your life.",
+      "technos": ["JAVA", "J2EE", "REST", "ORACLE"],
+      "quote": "Il n&#39;y a que les gens qui aiment rire qui sont serieux. Les autres se prennent au serieux.",
+      "hobbies": [
+        {
+          "hobbyName": "Natation",
+          "hobbyUrl": "",
+          "hobbyPic": ""
+        }
+      ],
+      "languages": [
+        {
+          "languageName": "english",
+          "languageLevel": "professionnal"
+        },
+        {
+          "languageName": "italian",
+          "languageLevel": "beginner"
+        }
+      ]
+    },
+    {
+      "id": "009",
+      "firstName": "MAZIERE",
+      "lastName": "Benoit",
+      "title": "Ingenieur PHP senior",
+      "hiredAt": "05/03/2018",
+      "location": "Levallois",
+      "project": "Hackathon",
+      "pastProjects": ["AXA"],
+      "slack": "benoit.maziere",
+      "email": "benoit.maziere@ekino.com",
+      "phoneNumber": "0675567945",
+      "school": "CNAM ESCPI",
+      "pic": "https://media-exp2.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAYLAAAAJDBjYjRlYWVkLTBkZTYtNDhlNy05MmM0LTdmYTM1OGZhNWY4OA.jpg",
+      "experience": "I started as a J2EE developer and after I became a project manager. I worked for several IT companies on different project such as customer care and on line reservation.",
+      "technos": ["JAVA", "J2EE", "REST", "ORACLE"],
+      "quote": "Il n&#39;y a que les gens qui aiment rire qui sont serieux. Les autres se prennent au serieux.",
+      "hobbies": [
+        {
+          "hobbyName": "Natation",
+          "hobbyUrl": "",
+          "hobbyPic": ""
+        },
+        {
+          "hobbyName": "Music",
+          "hobbyUrl": "",
+          "hobbyPic": ""
+        }
+      ],
+      "languages": [
+        {
+          "languageName": "english",
+          "languageLevel": "professionnal"
+        },
+        {
+          "languageName": "italian",
+          "languageLevel": "beginner"
+        }
+      ]
+    },
+    {
+      "id": "010",
+      "firstName": "Nicolas",
+      "lastName": "PRUDHOMME",
+      "title": "CTO",
+      "hiredAt": "05/03/2012",
+      "location": "Levallois",
+      "project": "Hackathon",
+      "pastProjects": [],
+      "slack": "nicolas.prudhomme",
+      "email": "nicolas.prudhomme@ekino.com",
+      "phoneNumber": "0675567945",
+      "school": "CNAM ESCPI",
+      "pic": "https://media.licdn.com/media/p/3/005/0a0/3f0/202d923.jpg",
+      "experience": "I started as a J2EE developer and after I became a project manager. I worked for several IT companies on different project such as customer care and on line reservation.",
+      "technos": ["JAVA", "J2EE", "REST", "ORACLE"],
+      "quote": "Il n&#39;y a que les gens qui aiment rire qui sont sérieux. Les autres se prennent au sérieux.",
+      "hobbies": [
+        {
+          "hobbyName": "Music",
+          "hobbyUrl": "",
+          "hobbyPic": ""
+        }
+      ],
+      "languages": [
+        {
+          "languageName": "english",
+          "languageLevel": "professionnal"
+        },
+        {
+          "languageName": "spanish",
+          "languageLevel": "beginner"
+        }
+      ]
+    }
+  ]
+  
+>>>>>>> orga-feature

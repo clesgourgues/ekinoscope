@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import UserItem from './userItem';
-import { Link } from "react-router-dom";
+import Node from './Node';
+import OrgChart from 'react-orgchart';
+import 'react-orgchart/index.css';
 
 
 class Organigram extends Component {
-  state = { 
+  state = {
     users: [],
-   }
+  }
 
   componentDidMount() {
     fetch('/users')
@@ -14,42 +15,58 @@ class Organigram extends Component {
       .then(users => {
         this.setState({ users })
         this.totalUsers = this.state.users
+        // this.initechOrg = this.getOrg(users, this.props.searchTerm)
       });
   }
 
   componentWillReceiveProps(nextProps) {
-    if (nextProps !== this.props){
+    console.log(nextProps)
+    if (nextProps !== this.props) {
       const searchTerm = nextProps.searchTerm
-      const searchOption = nextProps.searchOption
-      if(searchOption === "user") {
-        let filteredUsers = this.totalUsers.filter(user => user["lastName"].toLowerCase()
+      let filteredUsers = this.totalUsers.filter(user => user["project"].toLowerCase()
         .indexOf(searchTerm) > -1)
-        this.setState({
-          users: filteredUsers
-        })
-      }
-      if(searchOption === "location") {
-        let filteredUsers = this.totalUsers.filter(user => user["location"].toLowerCase()
-        .indexOf(searchTerm) > -1)
-        this.setState({
-          users: filteredUsers
-        })
-      }
-      if(searchOption === "project") {
-        let filteredUsers = this.totalUsers.filter(user => user["project"].toLowerCase()
-        .indexOf(searchTerm) > -1)
-        this.setState({
-          users: filteredUsers
-        })
-      }
-
+      this.setState({
+        users: filteredUsers
+      })
     }
   }
 
   render() {
-        const userNode = this.state.users.map( user=> <UserItem user={user} key={user.id} />)
-        return (<div className="App"><h1>Coucou</h1><ul className="card-container">{userNode}</ul></div>);
-      }
-    }
-    
-    export default Organigram;
+    const initechOrg = {
+      name: "Bill Lumbergh",
+      title: "Senior Cotech",
+      role: "cotech",
+      children: [
+        {
+          name: "Peter Gibbons",
+          title: "Junior Engineer",
+          role: "front",
+          children: [
+            {
+              name: "And More!!",
+              title: "Junior Engineer",
+              role: "back",
+            }
+          ]
+        },
+        {
+          name: "Milton Waddams",
+          title: "Junior Engineer",
+          role: "front",
+        },
+        {
+          name: "Bob Slydell",
+          title: "Junior Engineer",
+          role: "front",
+        },
+      ]
+    };
+    return (
+    <div className="App" id="initechOrgChart">
+    <h1>Projet {this.props.searchTerm}</h1>
+      <OrgChart tree={initechOrg} NodeComponent={Node} />
+    </div>);
+  }
+}
+
+export default Organigram;

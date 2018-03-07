@@ -17,26 +17,29 @@ class Results extends Component {
       });
   }
 
-
   componentWillReceiveProps(nextProps) {
     if (nextProps !== this.props){
-      let searchTerm = this.props.searchTerm
-      let searchOption = this.props.searchOption
+      let searchTerm = nextProps.searchTerm
+      let searchOption = nextProps.searchOption
       console.log(searchOption)
+      console.log(searchTerm)
       if(searchOption === "user") {
-        let filteredUsers = this.totalUsers.filter(user => user["lastName"].indexOf(searchTerm) > -1)
+        let filteredUsers = this.totalUsers.filter(user => user["lastName"].toLowerCase()
+        .indexOf(searchTerm) > -1)
         this.setState({
           users: filteredUsers
         })
       }
       if(searchOption === "location") {
-        let filteredUsers = this.totalUsers.filter(user => user["location"].indexOf(searchTerm) > -1)
+        let filteredUsers = this.totalUsers.filter(user => user["location"].toLowerCase()
+        .indexOf(searchTerm) > -1)
         this.setState({
           users: filteredUsers
         })
       }
       if(searchOption === "project") {
-        let filteredUsers = this.totalUsers.filter(user => user["project"].indexOf(searchTerm) > -1)
+        let filteredUsers = this.totalUsers.filter(user => user["project"].toLowerCase()
+        .indexOf(searchTerm) > -1)
         this.setState({
           users: filteredUsers
         })

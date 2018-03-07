@@ -25,7 +25,6 @@ export default class App extends React.Component {
   }
 
   handleChange = (e) => {
-    console.log('change of name', e.target.value)
     const searchOption = this.state.formValues.searchOption
     const searchTerm = e.target.value
     this.setState({
@@ -37,8 +36,7 @@ export default class App extends React.Component {
   }
 
   handleOptionChange = (e) => {
-    console.log('change of option', e.target.name)
-    const searchOption = e.target.name
+    const searchOption = e.target.value
     const searchTerm = this.state.formValues.searchTerm
     this.setState({
       formValues: {

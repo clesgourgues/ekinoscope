@@ -6,15 +6,15 @@ export default class OptionButtons extends React.Component {
         return (
             <div className="option-group">
                 <div>
-                    <input onChange={this.props.handleOptionChange} name="user" id="user" type="checkbox" defaultChecked={checkedOption === "user"} />
+                    <input onChange={this.props.handleOptionChange} name="option" value="user" id="user" type="radio" defaultChecked={checkedOption === "user"} />
                     <label htmlFor="user">User</label>
                 </div>
                 <div>
-                    <input onChange={this.props.handleOptionChange} name="location" id="location" type="checkbox" defaultChecked={checkedOption === "location"} />
+                    <input onChange={this.props.handleOptionChange} name="option" value="location" id="location" type="radio" defaultChecked={checkedOption === "location"} />
                     <label htmlFor="location">Location</label>
                 </div>
                 <div>
-                    <input onChange={this.props.handleOptionChange} name="project" id="project" type="checkbox" defaultChecked={checkedOption === "project"} />
+                    <input onChange={this.props.handleOptionChange} name="option" value="project" id="project" type="radio" defaultChecked={checkedOption === "project"} />
                     <label htmlFor="project">Project</label>
                 </div>
             </div>

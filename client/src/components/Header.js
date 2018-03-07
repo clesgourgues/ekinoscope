@@ -10,10 +10,10 @@ const Header = () => (
             <h3 className="App-nav">list</h3>
         </NavLink>
         <NavLink exact to="/map" activeClassName="activeLink">
-            <h3 className="App-nav">map</h3>
+            <h3 className="App-nav">Map</h3>
         </NavLink>
-        <NavLink exact to="/organigram" activeClassName="activeLink">
-            <h3 className="App-nav">organigram</h3>
+        <NavLink exact to="/projects" activeClassName="activeLink">
+            <h3 className="App-nav">Project view</h3>
         </NavLink>
     </header>
 );

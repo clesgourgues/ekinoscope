@@ -11,4 +11,10 @@ router.get('/', function(req, res, next) {
   res.json(users);
 });
 
+router.get('/:id', function(req, res, next) {
+  const userClicked = users.find(user => user.id === req.params.id);
+  res.json(userClicked);
+})
+
+
 module.exports = router;

@@ -1,0 +1,48 @@
+.Profile {
+    display: grid;
+    grid-template-columns: 15rem 1fr 15rem ;
+    grid-template-rows: 15rem 1fr;
+    grid-gap: 20px;
+    margin-bottom: 5rem;
+}
+
+.bolderContent {
+    font-weight: bolder;
+}
+
+.ProfilePres{
+    grid-column: 2 /2;
+    grid-row: 1/1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.ProfilePic {
+    grid-column: 1/1;
+    height: 100%;
+}
+
+.Profile .Encart {
+    grid-column: 2/2;
+    justify-self: left;
+}
+
+.Name {
+    grid-column: 2/2;
+    grid-row: 1/1;
+    margin: 0;
+}
+
+.Profile .Title {
+    margin: 0,5rem;
+}
+
+.Content{
+    grid-column: 2/2;
+    grid-row-start: 2;
+    margin-top: 2rem;
+}
+
+.Content p {
+    margin: 10px;
+}

@@ -47,7 +47,7 @@ class Results extends Component {
   }
 
   render() {
-        const userNode = this.state.users.map( user=> <UserItem user={user} key={user.id} />)
+        const userNode = this.state.users.map( user=> <UserItem user={user} key={user.id} clicked={this.props.clickProfile}/>)
         return (<div className="App"><ul className="card-container">{userNode}</ul></div>);
       }
     }

@@ -15,12 +15,8 @@ class App extends React.Component {
       searchTerm: "",
       searchOption: "user"
     },
-    user: []
   };
 
-  componentDidMount () {
-    console.log(this.props.location.pathname);
-}
 
   reset = () => {
     this.setState({
@@ -58,14 +54,6 @@ class App extends React.Component {
     console.log(this.state);
   };
 
-  handleClickProfile = e => {
-    const userId = e.target.id;
-    fetch(`/users/${userId}`)
-      .then(res => res.json())
-      .then(user => {
-        this.setState({ user: user });
-      });
-  };
 
   render() {
     return (
@@ -93,8 +81,9 @@ class App extends React.Component {
               )}
             />
             <Route
+            
               path="/profile/:id"
-              render={() => <Profile user={this.state.user} />}
+              render={() => <Profile/>}
             />
             <Route
               exact

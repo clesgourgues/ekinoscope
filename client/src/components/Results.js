@@ -23,6 +23,7 @@ class Results extends Component {
       const searchOption = nextProps.searchOption
       if(searchOption === "user") {
         let filteredUsers = this.totalUsers.filter(user => user["lastName"].toLowerCase()
+        .indexOf(searchTerm) > -1 || user["firstName"].toLowerCase()
         .indexOf(searchTerm) > -1)
         this.setState({
           users: filteredUsers

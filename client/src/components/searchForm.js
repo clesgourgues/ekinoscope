@@ -5,7 +5,14 @@ import CancelButton from './cancelButton';
 import OptionButtons from './optionButtons';
 
 
-const SearchForm = ({searchTerm, searchOption, onChange, onSubmit, reset, handleOptionChange }) => {
+const SearchForm = ({searchTerm, searchOption, onChange, onSubmit, reset, handleOptionChange, props }) => {
+/*     if () {
+        searchOption === searchOption
+    } else if() {
+        searchOption === "location"
+    } else if() {
+        searchOption === "project"
+    } */
     return (
         <form className="search" onSubmit={(e) => {onSubmit(e)}}>
             <div className="search-group">

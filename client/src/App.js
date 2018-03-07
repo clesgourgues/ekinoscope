@@ -61,9 +61,9 @@ export default class App extends React.Component {
             <Route exact path='/' render={() =>
               <Results searchTerm={this.state.formValues.searchTerm} searchOption={this.state.formValues.searchOption} />} />
             <Route exact path='/map' render={() =>
-              <Map searchTerm={this.state.searchTerm} searchOption={this.state.searchOption} />} />
-            <Route path="/organigram" render={() =>
-              <Organigram />} />
+              <Map ssearchTerm={this.state.formValues.searchTerm} searchOption="location" />} />
+            <Route exact path="/project" render={() =>
+              <Organigram searchTerm={this.state.formValues.searchTerm} searchOption="project"/>} />
             <Redirect from='*' to='/' />
           </Switch>
         </div>

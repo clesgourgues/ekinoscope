@@ -6,13 +6,13 @@ const Header = () => (
         <NavLink exact to="/">
             <h3 className="App-nav">ekino.<span>scope</span></h3>
         </NavLink>
-        <NavLink exact to="/" activeClassName="activeLink">
+        <NavLink exact to="/" activeStyle={{ color: '#DC0031' }} activeClassName="activeLink">
             <h3 className="App-nav">list</h3>
         </NavLink>
-        <NavLink exact to="/map" activeClassName="activeLink">
+        <NavLink exact to="/map" activeStyle={{ color: '#DC0031' }} activeClassName="activeLink">
             <h3 className="App-nav">map</h3>
         </NavLink>
-        <NavLink exact to="/projects" activeClassName="activeLink">
+        <NavLink exact to="/project" activeStyle={{ color: '#DC0031' }} activeClassName="activeLink">
             <h3 className="App-nav">project view</h3>
         </NavLink>
     </header>
